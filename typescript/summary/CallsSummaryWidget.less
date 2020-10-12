@@ -1,0 +1,85 @@
+.CallsSummaryWidget {
+    .callsSummaryWidget-summary {
+        .clearfix;
+        padding: 20px;
+        .summaryCollapseBtn {
+            cursor: pointer;
+            .summaryCollapseBtnIcon {
+                display: inline-block;
+                margin-right: 5px;
+                color: @black;
+                font-size: 20px;
+            }
+            .title-h4 {
+                display: inline-block;
+            }
+            span {
+                .cornerDownGreyIcon;
+                margin-left: 5px;
+                position: relative;
+                top: -1px;
+            }
+        }
+        .callsSummaryWidget-summary__content {
+            display: none;
+            padding-top: 15px;
+        }
+        &.showSummary {
+            .summaryCollapseBtn {
+                span {
+                    .cornerUpGreyIcon;
+                }
+            }
+            .callsSummaryWidget-summary__content {
+                display: block;
+                .m-clearfix();
+            }
+        }
+    }   
+    .callsSummaryWidget__item {
+        border-radius: 5px;
+        border: 1px solid @borderColor;
+        box-sizing: border-box;
+        padding: 10px;
+        display: inline-block;
+        margin-right: 14px;
+        margin-bottom: 20px;
+        height: 110px;
+        width: 120px;
+        float: left;
+        .fa,
+        .far,
+        .fas{
+            color: #76cbe5;
+            font-size: 30px;
+        }
+        .quantity {
+            font-size: 16px;
+        }
+        .description {
+            color: @black50;
+            font-size: 14px;    
+            line-height: 16px;
+        }
+        &.callsSummaryWidget__item_warning {
+            .fa,
+            .fas,
+            .far {
+                color: @redColor;
+            }
+        }
+        .itemIconWrapper {
+            display: flex;
+            margin-bottom: 5px;
+            i:first-child {
+                margin-right: 5px;
+            }
+            i:last-child {
+                font-size: 18px;
+            }
+        }
+    } 
+    .callsSummaryWidget__footer {
+        padding: 20px;
+    }
+}

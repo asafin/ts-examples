@@ -1,0 +1,21 @@
+.DemoMessageComponentView {
+    &__header {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 20px;
+    }
+    &__headerIcon {
+        color: $grayColor;
+        cursor: pointer;
+    }
+    &__content {
+        margin-bottom: 20px;
+    }
+    &__actions {
+        display: flex;
+        justify-content: center;
+        .ActionButton {
+            width: 400px;
+        }
+    }
+}

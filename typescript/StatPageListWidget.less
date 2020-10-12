@@ -1,0 +1,56 @@
+@import "./ratingList/RatingListWidget.less";
+@import "./callList/CallListWidget.less";
+@import "./summary/CallsSummaryWidget.less";
+@import "./filters/dateChooser/DateChooser.less";
+@import "./filters/StatPageListWidgetFilter.less";
+
+.StatPageListWidget {    
+    width: 100%;
+    .statPageListWidget-header {
+        .grayBorderBottom;
+        margin-bottom: 10px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & > .Button {          
+            width: 150px;
+        }
+    }  
+    .statPageListWidget-content {
+        .m-clearfix();        
+        &.showFilters {
+            .statPageListWidget-column {
+                &.statPageListWidget-column_left {
+                    margin-right: 25px;
+                    width: ~"calc(100% - 320px)";
+                }
+                &.statPageListWidget-column_right {
+                    display: block;
+                }
+            }            
+        }
+    }
+    .statPageListWidget-column {
+        float: left;
+        &.statPageListWidget-column_left {
+            width: 100%;
+        }
+        &.statPageListWidget-column_right {
+            display: none;
+            padding: 20px 15px; 
+            width: 280px;
+        }
+    }
+    .statPageListWidget-footer {
+        .grayBorderTop;
+        .grayBorderBottom;
+        padding: 20px;
+    }
+    .statPageListWidget-exportButtonWrapper {
+        padding: 20px;
+    }
+    .statPageListWidget-gridFooter {
+        padding: 20px;
+    }
+}

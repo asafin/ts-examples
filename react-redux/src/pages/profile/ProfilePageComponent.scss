@@ -1,0 +1,11 @@
+.ProfilePageComponent{
+    @import '../../components/forms/profile/ProfileForm.scss';
+    @import '../../components/forms/changePassword/ChangePasswordForm.scss';
+    @import './tabsNavigation/TabsNavigationComponent.scss';
+    &__header{
+        margin-bottom: 50px;
+    }
+    .TabsNavigationComponent{
+        margin-bottom: 10px;
+    }
+}

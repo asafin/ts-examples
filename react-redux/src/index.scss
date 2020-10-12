@@ -1,0 +1,186 @@
+@import "./../node_modules/normalize.css/normalize.css";
+@import "./variables.scss";
+@import './mixins.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+div {
+  box-sizing: border-box;
+}
+
+body {
+    background: $bodyBackground;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container_desktop {
+  $width: $desktop;
+  width: $width;
+  min-width: $width;
+  max-width: $width;
+}
+
+.container_tablet {
+  $width: $tablet;
+  width: $width;
+  min-width: $width;
+  max-width: $width;
+}
+
+.container_mobile {
+  $width: $mobile;
+  width: $width;
+  min-width: $width;
+  max-width: $width;
+}
+
+.panel {
+  background-color: $white;
+  border: 1px solid #e2ded9;
+  padding: 20px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0);
+}
+
+.well {
+  padding: 20px;
+  background-color: $smokeWhite;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0);
+}
+
+// обрезка текста
+.mpbxCut {
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0;
+  text-overflow: ellipsis;
+}
+
+// Серая полоса после блока
+.grayBorderBottom {
+  border-bottom: 1px solid $borderColor;
+}
+
+.grayBorderTop {
+  border-top: 1px solid $borderColor;
+}
+
+.link {
+  color: $black;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+      color: $butterScotch;
+  }
+}
+
+.link_simple {
+  @extend .link;
+  border-bottom: 1px solid $black20;
+  &:hover {        
+      border-color: rgba(247, 196, 65, 0.2);
+  }
+}
+
+.link_pseudo {
+  @extend .link;
+  border-bottom: 1px dashed $black50;
+  &:hover {
+      border-color: rgba(247, 196, 65, 0.2);
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@import './components/buttons/Buttons.scss';
+@import './components/typography/Typography.scss';
+@import './components/input/InputComponent.scss';
+@import './components/navBar/PageNavigationBar.scss';
+@import './components/navBar/MainNavigationBar.scss';
+@import './components/forms/dateRangePicker/DateRangePickerComponent.scss';
+@import './components/forms/select/Select.scss';
+@import './components/modal/ModalComponent.scss';
+@import './components/forms/glossary/GlossaryFormView.scss';
+@import './components/forms/abonent/AbonentFormView.scss';
+@import './pages/callsList/callItem/CallItemComponent.scss';
+@import './public/PublicApplication.scss';
+@import './public/demo/DemoMessageComponentView.scss';
+@import './public/offer/OfferMessageComponentView.scss';
+@import './AuthenticatedApplication.scss';
+
+.MuiTable-root{
+  .MuiTableCell-head {
+    color: $black50;
+    font-size: $fontSize13;
+    .MuiTableSortLabel-root {
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        width: calc(100% - 25px);
+        height: 1px;
+        border-bottom: 1px dotted $black50;
+        left: 0;
+        bottom: 1px;
+      }
+      &.MuiTableSortLabel-active {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  .MuiTableBody-root {
+    .MuiTableRow-hover {
+      &:hover {
+        background: $hoverColor;
+      }
+    }
+    .MuiTableCell-root {
+      padding-top: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+      font-size: 13px;
+      height: 50px;
+      box-sizing: border-box;
+    } 
+  }  
+  .MuiSvgIcon-fontSizeSmall {
+    font-size: 18px;
+    color: $black50;
+  }
+}
+
+.MuiTablePagination-root {
+  .MuiTypography-body2{
+    color: $black50;
+    font-size: 13px;
+    font-family: $roboto;
+  }
+}
+
+
+.MuiListItem-root.Mui-selected, .MuiListItem-root.Mui-selected:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.MuiPaper-root {
+  .MuiListItem-root {
+    font-size: $p-font-size;
+    &.Mui-selected {
+  
+    }
+    &:hover {
+      background: $hoverColor;
+    }
+  }
+}

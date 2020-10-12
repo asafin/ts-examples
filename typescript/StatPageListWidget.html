@@ -1,0 +1,27 @@
+<div class="panel">        
+    <div class="statPageListWidget-content showFilters" uiField="contentWrapper">
+        <div class="statPageListWidget-column statPageListWidget-column_left">
+            <div class="statPageListWidget-header">                
+                <div uiBind="pageBar"></div>
+                <div uiBind="showFilter" setSmall="true" setLabel="Фильтры"/>                
+            </div>
+            <div class="statPageListWidget-dateFilter">
+                <div uiBind="dateFilter">
+                </div> 
+                <div uiBind="dateRangeTab" setMode="LINE"></div>
+            </div>    
+            <div class="statPageListWidget-statistics" uiField="statistics">
+                <div uiBind="summaryWidgets"></div>
+            </div>   
+            <div class="statPageListWidget-callLog" uiField="callLog">
+                <div uiBind="callListWidget"></div>
+            </div>
+            <div class="statPageListWidget-rating" uiField="rating">
+                <div uiBind="ratingListWidget"></div>
+            </div>    
+        </div>
+        <div class="statPageListWidget-column statPageListWidget-column_right">
+            <div uiBind="filter"></div>
+        </div>
+    </div>
+</div>

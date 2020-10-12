@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators" : true,
+    "emitDecoratorMetadata": true,
+    "noImplicitAny" : true,
+    "suppressImplicitAnyIndexErrors" : true,
+    "target" : "ES6",
+    "moduleResolution" : "Node",
+    "sourceMap": true,
+    "module" : "commonjs",
+    "jsx" : "react",
+    "allowJs": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ]
+}

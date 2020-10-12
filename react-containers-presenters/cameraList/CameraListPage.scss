@@ -1,0 +1,11 @@
+.CameraListPage {
+    @import "./list/CameraListComponent.scss";
+    &__header {
+        border-bottom: 1px solid $light-gray; 
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

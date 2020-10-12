@@ -1,0 +1,76 @@
+<div>        
+    <div class="statPageListWidgetFilter-header">
+        <div class="title-h3">Фильтры</div>
+    </div>
+    <div class="statPageListWidgetFilter-content">
+        <div class="form-item form-item_departament form-item_multiselect">
+            <div class="form-item__label">
+                Департамент
+            </div>
+            <div class="form-item__elem">
+                <div uiBind="departmentSelect" />
+            </div>            
+        </div>  
+       <div class="form-item form-item_call-centers form-item_multiselect">
+            <div class="form-item__label">
+                Call-центры
+            </div>
+            <div class="form-item__elem">
+                <div uiBind="callCenterSelect" />
+            </div>            
+        </div>      
+        <div class="form-item form-item_inbound-phones form-item_grid-filter">
+            <div class="form-item__label">
+                Многоканальные номера
+            </div>
+            <div class="form-item__elem">
+                <div uiField="inboundPhonesChooserBtn" class="inboundPhonesChooserBtn gridFilterSelectBtn">Выбрано 2 номера</div>
+            </div>            
+        </div>  
+        <div class="form-item form-item_abonent form-item_grid-filter">
+            <div class="form-item__label">
+                Абоненты
+            </div>
+            <div class="form-item__elem">
+                <div uiField="abonentChooserBtn" class="abonentChooserBtn gridFilterSelectBtn">Выбрано 2 абонента</div>
+            </div>            
+        </div>
+        <div class="form-item form-item_direction" uiField="directionSelectWrapper">
+            <div class="form-item__label">
+                Направление
+            </div>
+            <div class="">
+                <div uiBind="directionSelect" ></div>
+            </div>            
+        </div>
+        <div class="form-item form-item_duration" uiField="durationSelectWrapper">
+            <div class="form-item__label">
+                Длительность
+            </div>
+            <div class="form-item__elem">
+                <div uiBind="durationSelect" ></div>
+            </div>            
+        </div>
+        <div class="form-item form-item_status" uiField="statusSelectWrapper">
+            <div class="form-item__label">
+                Статус
+            </div>
+            <div class="form-item__elem">
+                <div uiBind="statusSelect" />
+            </div>            
+        </div>  
+            <div class="form-item form-item_comment" uiField="commentSelectWrapper">
+            <div class="form-item__label">
+                Комментарий
+            </div>
+            <div class="form-item__elem">
+                <div uiBind="commentSelect" />
+            </div>            
+        </div>             
+    </div>     
+    
+    <div class="statPageListWidgetFilter-actions">
+        <div uiBind="setFilterBtn" setSmall="true" setPrimary="true" setLabel="Применить"/>
+        <div uiBind="resetFilterBtn" setSmall="true" setLabel="Сбросить"/>
+    </div>    
+</div>

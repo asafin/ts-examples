@@ -1,0 +1,29 @@
+.LoginPageComponentView {
+    margin: 150px auto 0;
+    width: 500px;
+    .ActionButton {
+        width: 100%;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .header-logo {
+            background: no-repeat url('/images/logo_big.png');
+            background-size: cover;
+            height: 100px;
+            width: 100px;
+            margin-right: 20px;
+        }
+        .h1-title {
+            font-size: 41px;
+        }
+    }
+    &__content {
+        margin: 0 auto;
+        width: 400px;
+    }
+    &__item {
+        margin-bottom: 20px;
+    }
+}

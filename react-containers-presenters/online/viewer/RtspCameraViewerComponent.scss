@@ -1,0 +1,42 @@
+.RtspCameraViewerComponent {
+    @import './controls/FullScreenBtnComponent.scss';
+    @import './controls/PlayerVolumeControlsComponent.scss';
+    @import './controls/PlayerPlayPauseBtnComponent.scss';
+    @import './controls/GetScreenshotBtnComponent.scss';
+    position: relative;
+    video {
+        border: 1px solid $light-gray;
+        background: $placeholderBg;
+        width: 100%;
+    }
+    &__messages {
+        left: 20px;
+        position: absolute;
+        top: 15px;
+    }
+    &__controls {
+        align-items: center;
+        bottom: 12px;
+        color: $white;
+        display: flex;
+        height: 30px;
+        left: 0;
+        padding: 0 15px;
+        position: absolute;
+        width: 100%;
+    } 
+    .PlayerVolumeControlsComponent {
+        margin-right: 20px;
+    }
+    .PlayerPlayPauseBtnComponent {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        margin-left: -13px;        
+    }
+    .FullScreenBtnComponent {
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
+    }
+}

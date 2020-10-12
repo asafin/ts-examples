@@ -1,0 +1,74 @@
+.EventsListComponent {
+    @import "./item/EventsListItemComponent.scss";
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px; 
+    &__cutter {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    &__wrapper {
+        position: absolute;
+        top: 0;
+        transition: all .2s ease;
+    }
+    &__nav {
+        font-size: 30px;
+        color: $quarz;
+        .arrow {
+            position: absolute;
+            top: 50%;
+            margin-top: -17px;
+            &:not(.disabled){
+                cursor: pointer;
+            }
+            &_left {
+                left: -25px;
+            }
+            &_right {
+                right: -25px;
+            }
+            &.disabled {
+                opacity: 0.5;
+            }
+        }
+    }
+    &__inputRange {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -20px;
+        .eventsSlider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 4px;
+            border-radius: 1px;  
+            background: $quarz;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            position: relative;
+            top: -5px;
+        }
+          
+        .eventsSlider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%; 
+            background: $anthracite;
+            cursor: pointer;
+        }
+          
+        .eventsSlider::-moz-range-thumb {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: $anthracite;
+            cursor: pointer;
+        }
+    }
+}

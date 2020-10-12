@@ -1,0 +1,11 @@
+.PlayerPlayPauseBtnComponent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    .playPauseBtn {
+        cursor: pointer;
+        font-size: 26px;
+        margin: 0 10px;
+    }
+}

@@ -1,0 +1,40 @@
+.InboundPhoneChooserWidgetForm {
+    width: 768px;
+    padding: 20px;
+    .inboundPhoneChooserWidgetForm-header {
+        .m-dialog-widget-header-big();
+        padding-bottom: 0;
+        .title-h2 {
+            margin-bottom: 20px;
+        }
+    }
+    .inboundPhoneChooserWidgetForm-content {
+        .form-item_inbound-phones {           
+            .Grid {
+                .header-row__item_select-radio,
+                .content-row__item_select-radio {
+                    width: 50px;
+                   
+                }
+                .header-row__item_inbound-phone,
+                .content-row__item_inbound-phone{
+                    width: 200px;
+                }
+                .content-wrapper {
+                    max-height: 500px;
+                    overflow-y: auto;
+                }
+            }          
+        }
+        .form-item_actions {
+            .grayBorderTop;
+            padding-top: 20px;
+            & > .Button {
+                margin-right: 20px;
+            }
+            .selectedQuantityField {
+                display: inline-block;
+            }
+        }
+    }
+}

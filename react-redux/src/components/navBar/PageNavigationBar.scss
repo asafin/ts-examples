@@ -1,0 +1,67 @@
+.PageNavigationBar {
+    background: $black;
+    height: 45px;
+    width: 100%;
+    &__content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .SimpleButton {
+            display: inline-block;
+            font-size: 14px;
+            color: $white;
+            cursor: pointer;
+            height: 45px;
+            line-height: 45px;
+            padding: 0 12px;
+            position: relative;
+            &:hover {
+                color: $wheat;
+            }
+            &:after {
+                background: $white;
+                bottom: 12px;
+                content: '';
+                height: 1px;
+                left: 12px;
+                opacity: .2;
+                position: absolute;
+                transition: background .2s ease;
+                width: calc(100% - 24px);
+            }
+        }
+        .LinkButton {
+            position: relative;
+            a {
+                display: inline-block;
+                font-size: 14px;
+                color: $white;
+                height: 45px;
+                line-height: 45px;
+                padding: 0 12px;
+                &:hover {
+                    color: $wheat;
+                }
+                &.active {
+                    background: #5e6674;
+                }
+            }
+            &:after {
+                background: $white;
+                bottom: 12px;
+                content: '';
+                height: 1px;
+                left: 12px;
+                opacity: .2;
+                position: absolute;
+                transition: background .2s ease;
+                width: calc(100% - 24px);
+            }
+        }
+        .ClientsBalanceComponent{
+            margin-right: 20px;
+            color: $white;
+            font-size: 14px;
+        }
+    }
+}

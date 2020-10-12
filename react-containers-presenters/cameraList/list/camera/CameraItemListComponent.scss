@@ -1,0 +1,84 @@
+.CameraItemListComponent {
+    background: $white;
+    padding: 20px;
+    box-shadow: $shadow1;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    &__column_left {
+        width: calc(100% - 50px);
+    }
+    &__column_right {
+        display: flex;
+        justify-content: flex-end;
+        width: 50px;
+    }
+    &__main {
+        margin-bottom: 7px;
+    }
+    &__main,
+    &__secondary {
+        display: flex;
+        align-items: center;    
+        justify-content: space-between;
+    }
+    &__status {
+        font-weight: 700;
+        color: $silver;
+    }
+    &__status_working {
+        color: $july;
+    }
+    &__status_error {
+        color: $pink;
+        span {
+            padding-right: 6px;
+        }
+    }
+    &__actions {
+        height: 30px;
+        position: relative;        
+        width: 30px;
+    }
+    &__actions-btn {
+        border-radius: 100%;
+        color: $silver;
+        cursor: pointer;
+        display: flex;
+        height: 30px;
+        width: 30px;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            background: $light-gray;
+            color: $kraiola;            
+        }
+    }
+    &__actions-content {
+        display: none;
+        border-radius: 3px;
+        box-shadow: $shadow1;
+        background-color: $white;
+        position: absolute;
+        right: 0;
+        top: 30px;
+        width: 190px;        
+        z-index: 2;
+        &.showContent {
+            display: block;
+        }
+    }
+    &__action-item {
+        color: $silver;
+        cursor: pointer;
+        padding: 10px 20px;
+        a {
+            color: inherit;
+        }
+        &:hover {
+            background: $light-gray;
+            color: $kraiola;  
+        }
+    }
+}

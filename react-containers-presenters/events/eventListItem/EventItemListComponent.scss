@@ -1,0 +1,55 @@
+.eventCard.eventCard_list {
+    background: $white;
+    box-shadow: $shadow2;
+    border-radius: 2px;
+    display: flex;
+    height: 44px;
+    align-items: center;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    padding: 0 20px;
+    width: calc(100% - 10px);
+    @media (max-width: 400px) {
+        margin-left: 0px;
+    }
+    &.eventCard_selected {
+        background: $lavanda;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .eventCard__icon {
+        color: $kraiola;
+        font-size: 24px;
+        margin-right: 15px;
+        text-align: center;
+        width: 30px;
+    }
+    .eventCard__description {
+        align-items: center;
+        display: flex;        
+        width: calc(100% - 30px);
+        .eventCard__description-main {
+            display: flex;
+            align-items: center;
+            @include tabletAndMobile {
+                display: block;
+            }
+        }
+        .eventCard__description-title {
+            font-size: $base-font-size;
+            width: 170px;
+            @include tabletAndMobile {
+                margin-bottom: 2px;
+            }
+        }
+        .eventCard__description-camera {
+            color: $silver;
+            @include tabletAndMobile {
+                font-size: $p-font-size;
+            }      
+        }
+        .eventCard__description-date {
+            font-size: $p-font-size;
+            margin-left: auto;
+        }
+    }
+}

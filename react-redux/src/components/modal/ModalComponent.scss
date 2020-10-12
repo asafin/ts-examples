@@ -1,0 +1,29 @@
+.ModalComponent {
+
+}
+
+.SmallModalComponent {
+    width: 75%;
+    max-width: 768px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid $grayColor;
+    border-radius: 6px;
+    box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+    background: $white;
+    &__contentWrapper {
+        width: 100%;
+    }    
+}
+
+.modal-header {
+    display: flex;
+    margin-bottom: 32px;
+    justify-content: space-between;
+    .modal-header__icon {
+        color: $grayColor;
+        cursor: pointer;
+    }
+}

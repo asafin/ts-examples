@@ -1,0 +1,50 @@
+.MainNavigationBar {
+    $height: 87px;
+    background: $white;
+    box-shadow: $shadow;
+    width: 100%;
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        height: $height;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+    .LinkButton {
+        margin-left: 10px;
+        a {
+            color: #282828;
+            display: inline-block;
+            font-size: $fontSize17;
+            height: $height;
+            line-height: $height;
+            padding: 0 12px;
+            transition: color .2s ease;
+            position: relative;
+            &:hover,
+            &.active {
+                content: '';
+                display: block;
+            }
+            &:after {
+                background: $butterScotch;
+                bottom: 30px;
+                display: none;
+                content: '';
+                height: 3px;
+                left: 12px;
+                position: absolute;
+                transition: background .2s ease;
+                width: calc(100% - 24px);
+            }
+        }        
+    }
+}

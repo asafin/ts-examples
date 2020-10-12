@@ -1,0 +1,68 @@
+//colors
+$white: #ffffff;
+// Цвет фона страницы
+$bodyBackground: #eeeae5;
+// Серый текст
+$grayColor: #999999;
+// Серые иконки
+$grayIconColor: #bdbcba;
+$borderColor: #e6e5e3;
+
+// Светло серый
+$lightGrayColor: #f2f1ef;
+// Зеленые иконки ОК
+$greenColor: #11af14;
+// Красные иконки REMOVE
+$redColor: #E5444A;
+// Светло-оранжевый цвет для HOVER
+$hoverColor: #fef6c7;
+
+$formLabelColor: #787878;
+$yellow: rgba(247, 196, 65, 1);
+$smokeWhite: #f8f7f5;
+$whiteSmoke: #f0f0f0;
+$deepYellow : #fbce5d;
+$mainNavColor: #787878;
+$white: #ffffff;
+$black: #282828;
+$black50: rgba(40,40,40, 0.5);
+$black20: rgba(40,40,40, 0.2);
+$wheat: #ffdc7d;
+$butterScotch: #f7c441;
+$veryLightPink: #f2f2f2;
+$pale: #eee7df;
+
+//shadows
+$shadow1: 0 1px 10px 0 rgba(140, 146, 162, 0.12), 0 4px 5px 0 rgba(140, 146, 162, 0.14), 0 2px 4px -1px rgba(140, 146, 162, 0.2);
+$shadow2: 0 1px 2px 0 #d3d3d3;
+
+//fonts
+$ibm: 'IBM Plex Serif';
+$roboto: 'Roboto';
+
+//font-sizes
+$fontSize13: 14px; 
+$fontSize17: 18px;
+$fontSize21: 21px;
+$fontSize30: 30px;
+$fontSize41: 41px;
+$fontSize50: 50px;
+
+$h1-font-size: $fontSize50;
+$h2-font-size: $fontSize30;
+$h3-font-size: $fontSize21;
+$p-font-size: $fontSize13;
+$base-font-size: $fontSize17;
+$ultra-small-font-size: 8px;
+
+//breakpoints
+$wide: 100%;
+$desktop: 1440px;
+$tablet: 1024px;
+$mobile: 768px;
+
+// forms
+$formInputHeight: 44px;
+
+//shadow
+$shadow: 0 0 15px 0 rgba(40,40,40,0.2);

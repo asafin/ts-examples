@@ -1,0 +1,23 @@
+.ProfileFormView {
+    &__header {
+        margin-bottom: 20px;
+    }
+    &__content {
+        @include m-form-item(170px, 780px);
+        .form-item {
+            margin-bottom: 20px;
+            input {
+                max-width: 50%;
+            }
+        }
+        .form-item_actions {
+            .form-item__elem {
+                @extend .grayBorderTop;
+                padding-top: 20px;
+                .ActionButton {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

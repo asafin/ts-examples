@@ -1,0 +1,119 @@
+.EventsLogPage {
+    @import './eventListItem/EventItemTileComponent.scss';
+    @import './eventListItem/EventItemListComponent.scss';
+    @import './eventListItem/EventItemMosaicComponent.scss';
+    @import './eventDetails/EventDetailsComponent.scss';
+    @import './eventsGroup/EventsGroupComponent.scss';
+    @import './filters/EventsLogFiltersComponent.scss';
+    @import './eventsLogHeader/EventsLogHeaderComponent.scss';
+    &_hasSelected {
+        display: flex;     
+        @media (min-width: #{$tablet + 1px}) {
+            justify-content: flex-start;
+            align-items: stretch;  
+        }
+        @include tabletAndMobile {
+            flex-direction: column-reverse;
+        }
+        .eventsLog {
+            padding-right: 20px;
+            position: relative;
+            width: 50%;
+            @include tabletAndMobile {
+                padding: 0;
+                width: 100%;
+                &:before {
+                    display: none;
+                }
+            }
+            &:before {
+                background: $light-gray;
+                content: '';
+                height: 100%;
+                right: 0px;
+                position: absolute;
+                top: 0;
+                width: 1px;
+            }
+        }
+        .eventCard.eventCard_tile {
+            @media (min-width: #{$desktop + 1px}) {
+                width: calc(33.3% - 10px);
+            }
+            @include desktop {
+                width: calc(50% - 10px);
+            }    
+        }
+        .eventCard.eventCard_mosaic {
+            width: calc(50% - 3px);   
+        }
+        .eventCard.eventCard_list {
+            @include tabletAndMobile {
+                padding: 0 15px;
+                .eventCard__icon {
+                    margin-right: 10px;
+                }
+            }            
+        }
+        .eventDetails {
+            padding-left: 20px;
+            width: 50%;
+            @include tabletAndMobile {
+                margin-bottom: 20px;
+                padding: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.eventsLog-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;    
+    .SwitchViewComponent {
+        margin-left: auto;
+    }
+}
+
+.eventsLog.eventsLog_list {
+    .eventsLog-content__group-content {
+        margin-bottom: 20px;
+    }
+}
+
+.eventsLog-content {
+    position: relative;
+    &:after {
+        background: $kraiola;
+        content: '';
+        height: calc(100% - 10px);
+        left: 4px;
+        position: absolute;
+        top: 10px;
+        width: 1px;
+    }
+    @media (max-width: 400px) {
+        &:after {
+            left: -4px;
+        }
+    }
+}
+
+.eventsLog-getMoreBtn {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.eventCard {    
+    &:not(.eventCard_selected) {
+        cursor: pointer;
+        &.eventCard_tile:hover {
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+        }   
+        &.eventCard_list:hover {
+            background: $lavanda;
+        }    
+    }
+}

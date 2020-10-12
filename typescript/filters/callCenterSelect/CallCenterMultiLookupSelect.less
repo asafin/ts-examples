@@ -1,0 +1,28 @@
+.CallCenterMultiLookupSelect {
+    .MultiLookupModelSelect {
+        max-height: 150px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border: 1px solid @black20;
+        border-radius: 4px;
+        padding: 2px;
+    }
+    .Grid {
+        @height: 30px;
+        .header-row__item,
+        .content-row__item {
+            line-height: @height;
+            & > div {
+                line-height: @height;
+            }
+        }
+        .content-row__item_label {
+            width: ~"calc(100% - 30px)";
+            .label-column {
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}

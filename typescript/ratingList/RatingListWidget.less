@@ -1,0 +1,54 @@
+.RatingListWidget {
+    .ratingListWidget__gridContent {
+        .header-wrapper,
+        .content-wrapper {
+            padding-left: 10px;
+        }
+        .header-row__item,
+        .content-row__item {
+            margin-left: 10px;
+        }
+        .header-row__item_abonent,
+        .content-row__item_abonent {
+            width: 300px;
+        }
+        .content-row__item_abonent {
+            & > div:nth-child(1) {
+                padding-right: 5px;
+                .maxCutter (260px);
+            }
+            & > div:nth-child(2) {
+                color: @black50;
+            }
+        }
+        .header-row__item_inbound,
+        .content-row__item_inbound {
+            text-align: center;
+            width: 120px;
+        }
+        .header-row__item_outbound,
+        .content-row__item_outbound {
+            text-align: center;
+            width: 120px;
+        }
+        .header-row__item_missing,
+        .content-row__item_missing {
+            text-align: center;
+            width: 120px;
+        }
+        .header-row__item_duration,
+        .content-row__item_duration {
+            text-align: center;
+            width: 120px;
+        }
+        .header-row__item_average_duration,
+        .content-row__item_average_duration {
+            text-align: center; 
+            width: 120px;
+        }
+    }
+    .ratingListWidget__gridFooter,
+    .ratingListWidget__footer {
+        padding: 20px;
+    }
+}

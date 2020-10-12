@@ -1,0 +1,36 @@
+.EventsListItemComponent {
+    max-height: 160px;
+    display: inline-block;
+    position: relative;
+    margin-right: 2px;
+    width: calc(20% - 2px);
+    &__image {
+        background-color: $placeholderBg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        img {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            object-fit: scale-down;
+            height: 100%;
+            width: 100%;
+        }
+    } 
+    &__info {
+        display: flex;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        .MessagePillComponent {
+            @include customResolution(480px, 360px) {
+                font-size: $ultra-small-font-size;
+            }
+            @media (max-width: 400px) {
+                font-size: 11px;
+            }
+        }
+    }
+}

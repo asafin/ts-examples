@@ -1,0 +1,14 @@
+.EventDetailsComponent {
+    position: sticky;
+    top: 10px;
+    &__description {
+        padding-top: 20px;
+        .h2-title {
+            margin-bottom: 20px;
+        }
+    }
+    &__descriptionItem {
+        font-size: $base-font-size;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,31 @@
+.TabsNavigationComponent {
+    display: flex;
+    align-items: center;
+    &__tab {
+        font-size: $fontSize17;
+        color: $black;
+        display: inline-block;
+        padding: 6px 18px;
+        white-space: nowrap;
+        position: relative;
+        transition: color .2s ease;
+        &:not(.active) {
+            cursor: pointer;
+            &:after {
+                background: $black;
+                bottom: 3px;
+                content: '';
+                height: 1px;
+                left: 18px;
+                opacity: .2;
+                position: absolute;
+                transition: background .2s ease;
+                width: calc(100% - 36px);
+            }
+        }
+        &.active {
+            background-color: $butterScotch;
+            border-radius: 70px;
+        }
+    }
+}

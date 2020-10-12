@@ -1,0 +1,11 @@
+.AuthenticatedApplication{
+    @import "./pages/profile/ProfilePageComponent.scss";
+    @import './pages/abonents/AbonentsSettingsPageComponent.scss';
+    @import './pages/callsList/CallsListPageComponent.scss';
+    @import './pages/glossary/GlossaryListPageComponent.scss';
+    min-height: 100vh;
+    background: $bodyBackground;
+    &__content {
+        margin-top: 30px;
+    }
+}

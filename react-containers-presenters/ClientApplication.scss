@@ -1,0 +1,24 @@
+@import "./archive/ArchivePage.scss";
+@import "./cabinet/CabinetPage.scss";
+@import "./cameraList/CameraListPage.scss";
+@import "./catalog/CatalogPage.scss";
+@import "./events/EventsLogPage.scss";
+@import "./online/LiveStreamPage.scss";
+@import "./camera/AddCameraFormPage.scss";
+@import "./camera/EditCameraFormPage.scss";
+@import "./components/player/PlayerComponent.scss";
+
+.content-header {    
+    border-bottom: 1px solid $light-gray;
+    padding-bottom: 20px;    
+    align-items: center;
+    display: flex;
+    @include tabletAndMobile {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+.content {
+    padding: 20px 0;
+}

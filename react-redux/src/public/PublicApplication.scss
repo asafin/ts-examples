@@ -1,0 +1,16 @@
+.PublicApplication {
+    @import "./login/LoginComponent.scss";
+    &__header {
+        border-bottom: 1px solid #aaa;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+        .header-logo {
+            background: no-repeat url('/images/beelineBusinnessLogoSmall.png');
+            width: 116px;
+            height: 40px;
+            background-repeat: no-repeat;
+        }
+    }
+}

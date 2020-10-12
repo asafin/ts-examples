@@ -1,0 +1,118 @@
+.CameraItemTileComponent {
+    border-radius: 4px;
+    box-shadow: $shadow1;    
+    display: inline-block;
+    max-height: 320px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 334px;
+    &:nth-child(3n) {
+        margin-right: 0;
+    }   
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        height: 88px;
+        .CameraItemTileComponent__header__column_left{
+            width: calc(100% - 50px);
+            .h2-title {
+                margin-bottom: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100%;
+                white-space: nowrap;
+            }
+        }
+        .CameraItemTileComponent__header__column_right{
+            display: flex;
+            justify-content: flex-end;
+            width: 50px;
+        }
+    }
+    &__preview {
+        height: 140px;
+        background-color: $placeholderBg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //max-height: 152px;
+        width: 100%;
+        img {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            object-fit: scale-down;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &__services {
+        padding: 20px;
+        height: 75px;
+    }
+    &__header__bottom {
+        display: flex;
+        align-items: center;
+    }
+    &__status {
+        font-weight: 700;
+        color: $silver;
+        margin-right: 20px;
+    }
+    &__status_working {
+        color: $july;
+    }
+    &__status_error {
+        color: $pink;
+        span {
+            padding-right: 6px;
+        }
+    }
+    &__actions {
+        height: 30px;
+        position: relative;        
+        width: 30px;
+    }
+    &__actions-btn {
+        border-radius: 100%;
+        color: $silver;
+        cursor: pointer;
+        display: flex;
+        height: 30px;
+        width: 30px;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            background: $light-gray;
+            color: $kraiola;            
+        }
+    }
+    &__actions-content {
+        display: none;
+        border-radius: 3px;
+        box-shadow: $shadow1;
+        background-color: $white;
+        position: absolute;
+        right: 0;
+        top: 30px;
+        width: 190px;        
+        z-index: 2;
+        &.showContent {
+            display: block;
+        }
+    }
+    &__action-item {
+        color: $silver;
+        cursor: pointer;
+        padding: 10px 20px;
+        a {
+            color: inherit;
+        }
+        &:hover {
+            background: $light-gray;
+            color: $kraiola;  
+        }
+    }
+}

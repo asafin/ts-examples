@@ -1,0 +1,39 @@
+.EventsGroupComponent {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    position: relative;    
+    &__group-title {
+        background: $smoke;
+        font-size: $h2-font-size;
+        color: $silver;
+        display: inline-block;
+        margin-bottom: 16px;
+        margin-left: 5px;
+        padding: 5px 20px 5px 5px;
+        position: relative;
+        z-index: 2;
+        &:before {
+            background: $kraiola;
+            border-radius: 100%;
+            content: '';
+            height: 9px;
+            left: -15px;
+            margin-top: -5px;
+            position: absolute;
+            top: 50%;
+            width: 9px;
+        }
+        @media (max-width: 400px) {
+            margin-left: 0;
+            &:before {
+                left: -18px;
+            }
+        }
+    }
+    &_tile {
+        .EventsGroupComponent__group-title {
+            position: sticky;
+            top: 5px;
+        } 
+    }
+}

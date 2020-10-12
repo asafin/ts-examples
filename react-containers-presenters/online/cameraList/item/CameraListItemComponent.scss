@@ -1,0 +1,52 @@
+.CameraListItemComponent{
+    background: $white;
+    height: 80px;
+    box-shadow: $shadow1;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    &_selected {
+        background: $lavanda;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    &__column_left {
+        position: relative;
+        width: 140px;
+    }
+    &__column_right {
+        padding-left: 20px;
+        width: calc(100% - 140px);
+    }
+    &__preview {
+        height: 80px;
+        background-color: $placeholderBg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        //max-height: 152px;
+        width: 100%;
+        img {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            object-fit: scale-down;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &__status {
+        border-radius: 100%;
+        position: absolute;
+        height: 10px;
+        left: 10px;
+        top: 10px;
+        width: 10px;
+    }
+    &__status_working {
+        background: $green;
+    }
+    &__status_offline {
+        background: $pink;
+    }
+}

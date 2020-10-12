@@ -1,0 +1,26 @@
+.LiveStreamPage {
+    @import "./cameraList/CameraListComponent.scss";
+    @import "./viewer/RtspCameraViewerComponent.scss";
+    @import "./eventList/EventsListComponent.scss";
+    &__header {
+        border-bottom: 1px solid $light-gray; 
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__content {
+        display: flex;
+    }
+    &__column_left {
+        padding-right: 40px;
+        width: calc(100% - 360px);
+    }
+    &__column_right {
+        width: 360px;
+    }
+    .RtspCameraViewerComponent {
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,49 @@
+.StatPageListWidgetFilter {
+    @import "./departmentSelect/DepartmentMultiLookupSelect.less";
+    @import "./callCenterSelect/CallCenterMultiLookupSelect.less";
+    width: 100%;
+    .statPageListWidgetFilter-header {
+        margin-bottom: 20px;
+    }
+    .statPageListWidgetFilter-content {
+        .m-form-item(100%, 100%);        
+        .form-item {
+            margin-bottom: 20px;
+            .form-item__label {
+                float: none;
+                line-height: inherit;
+            }
+            .form-item__elem {
+                float: none;
+            }
+        }
+    }
+    .form-item_date {
+        .dateFilter {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .dateFilterDisplay {
+            color: @black;
+            display: inline-block;
+        }
+    }
+    .form-item_grid-filter {
+        .gridFilterSelectBtn {
+            display: inline-block;
+            margin-right: 15px;
+            border-bottom: 1px dotted rgb(153, 153, 153);
+            cursor: pointer;
+        }
+    }
+    .statPageListWidgetFilter-actions {
+        .grayBorderTop;
+        padding-top: 20px;
+        margin-top: 20px;
+        .Button {
+            &:first-child {
+                margin-right: 5px;
+            }
+        }
+    }
+}

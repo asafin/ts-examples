@@ -1,0 +1,85 @@
+@mixin clearFix(){
+    &:before,
+    &:after{
+      content: " "; 
+      display: table; 
+    }
+  
+    &:after{
+      display: block;
+      clear: both;
+      height: 1px;
+      margin-top: -1px;
+      visibility: hidden;
+    }
+    &{
+      *zoom: 1;
+    }
+}
+
+@mixin lineHeight($height) {
+    height: $height;
+    line-height: $height;
+}
+
+@mixin maxCutter ($width) {
+  max-width: $width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin desktop {
+  @media (min-width: #{$tablet + 1px}) and (max-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile + 1px}) and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin tabletAndMobile {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin customResolution($max, $min) {
+  @media (min-width: #{$min + 1px}) and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+@mixin m-form-item($labelWidth, $inputWidth) {
+  .form-item {
+    display: flex;
+    .form-item__label {
+        color: $black50;
+        font-size: 15px;
+        line-height: $formInputHeight;
+        min-height: 1px;
+        width: $labelWidth;
+    }
+    .form-item__elem {
+        width: $inputWidth;
+        & > input {
+            width: 100%;
+        }
+    }
+    &.form-item_checkbox, 
+    &.form-item_radio {
+        .Radio {
+            font-size: 14px;
+        }
+    }
+  }
+}

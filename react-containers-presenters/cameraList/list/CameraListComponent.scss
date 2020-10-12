@@ -1,0 +1,37 @@
+.CameraListComponent{
+    @import './camera/CameraItemListComponent.scss';
+    @import './camera/CameraItemTileComponent.scss';
+    max-width: $tablet;
+    margin: 0 auto;
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        max-width: $tablet;
+        .InputTextComponent {
+            margin-right: 20px;
+            width: 334px;
+        }
+        .SwitchViewComponent {
+            margin-left: auto;
+        }
+    }
+    &__emptyCameraListMessage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: $shadow1; 
+        height: 220px;
+        width: 334px;
+        color: $green-gray;        
+        border-radius: 4px;
+    }
+    &__emptyCameraListMessage__icon {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    &__emptyCameraListMessage__text {
+        font-size: $base-font-size;
+    }
+}

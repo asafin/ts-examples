@@ -1,0 +1,32 @@
+.h1-title {
+    font-size: $h1-font-size;
+    line-height: $h1-font-size;
+}
+
+.h2-title {
+    font-size: $h2-font-size;
+    line-height: 1.64;
+}
+
+.h3-title {
+    font-size: $h3-font-size;
+    font-weight: bold;
+    line-height: 1.92;
+}
+
+p, .p {
+    font-size: $p-font-size;
+    line-height: 1.92;
+    a {
+        @extend .link_simple;
+    }
+}
+
+.description {
+    color: $grayColor;
+    font-size: $p-font-size;
+    line-height: 18px;
+    a {
+        @extend .link_simple;
+    }
+}

@@ -1,0 +1,12 @@
+.SelectComponent {
+    .MuiFormLabel-root {
+        font-size: $p-font-size;
+        margin-bottom: 5px;
+    }
+    .MuiInputBase-root {
+        font-size: $p-font-size;
+    }
+    .MuiOutlinedInput-input {
+        padding: 13px 14px;
+    }
+}

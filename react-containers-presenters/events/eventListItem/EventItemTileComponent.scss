@@ -1,0 +1,80 @@
+.eventCard.eventCard_tile {
+    border-radius: 4px;
+    box-shadow: $shadow1;    
+    display: inline-block;
+    max-height: 250px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    width: calc(20% - 10px);
+    @include customResolution(1200px, $tablet) {
+        width: calc(25% - 10px);
+    }
+    @include tablet {
+        margin-bottom: 10px;
+        width: calc(33.33% - 10px);
+    }
+    @include mobile {
+        margin-bottom: 10px;
+        width: calc(50% - 10px);
+    }
+    @media (max-width: 400px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 360px;
+        width: 100%;
+    }
+
+    &.eventCard_selected {
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.7);
+    }
+    .eventCard__info {
+        display: flex;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        .IconMessagePillComponent {
+            @include customResolution(480px, 360px) {
+                font-size: $ultra-small-font-size;
+            }
+            @media (max-width: 400px) {
+                font-size: 11px;
+            }
+        }
+    }
+    .eventCard__description {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        height: 53px;
+        padding: 10px 20px;
+        .eventCard__name {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .eventCard__date {
+            font-size: 12px;
+            color: $silver;
+            .date {
+                padding-right: 5px;
+            }
+        }
+    }
+    .eventCard__image {
+        background-color: $placeholderBg;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100% - 53px);
+        //max-height: 152px;
+        width: 100%;
+        img {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            object-fit: scale-down;
+            height: 100%;
+            width: 100%;
+        }
+    } 
+}
