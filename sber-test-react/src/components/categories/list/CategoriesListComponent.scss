@@ -1,0 +1,10 @@
+@import './../items/category/CategoryItemComponent.scss';
+@import './../items/subCategory/SubCategoryItemComponent.scss';
+@import './../items/menu/MenuItemComponent.scss';
+
+.CategoriesListComponent {
+    padding: 20px 20px 0 0;
+    &__search {
+        margin-bottom: 20px;
+    }
+}

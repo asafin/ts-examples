@@ -1,0 +1,20 @@
+.Application {
+    height: 100vh;
+    &__content {
+        background: $grayLight;
+        display: flex;
+        height: calc(100% - 50px);
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    &__column {
+        height: 100%;
+    }
+    &__column_left {
+        width: 30%;
+        border-right: 1px solid $pale;
+    }
+    &__column_right {
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,9 @@
+.CategorySearchComponent {
+    padding-right: 20px;
+    margin: 20px 0;
+    .InputTextComponent {
+        &__text-input {
+            height: 40px;    
+        }
+    }
+}

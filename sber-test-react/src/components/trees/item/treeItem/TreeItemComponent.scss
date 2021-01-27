@@ -1,0 +1,24 @@
+.TreeItemComponent {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 14px;
+    border-bottom: 1px solid $pale;   
+    &__title {
+        width: 50%;
+    }
+    &__value {
+        width: 25%;
+        .InputTextComponent {            
+            margin-left: -11px;
+        }
+    }
+    &__actions {
+        width: 25%;
+    }
+    &__icon {
+        cursor: pointer;
+        margin-left: 20px;
+        color: $gray;
+    }
+}

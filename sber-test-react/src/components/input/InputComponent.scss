@@ -1,0 +1,51 @@
+$input-border-default: $pale;
+$input-border-focus: $wheat;
+$input-border-radius: 3px;
+$input-placeholder-color: $gray;
+$input-error: $red;
+
+.InputTextComponent {
+    $height: 34px;
+    &__text-input {
+        height: 30px;
+        border: 1px solid $input-border-default;
+        border-radius: $input-border-radius;
+        box-shadow: none;
+        box-sizing: border-box;
+        box-shadow: none;
+        padding: 0 10px;
+        width: 100%; 
+        &:focus {
+            border: 1px solid $input-border-focus;
+            outline: none;
+        }
+        &::placeholder {
+            color: $input-placeholder-color;
+        }
+    }
+    &__description {
+        font-size: $p-font-size;
+        color: $input-placeholder-color;
+        padding-top: 8px;
+    }
+    &_error {
+        .InputTextComponent__text-input {
+            border: 1px solid $input-error;
+        }
+        .InputTextComponent__description {
+            color: $input-error;
+        }
+    }
+    &__wrapper {
+        position: relative;
+        .searchInputIcon {
+            position: absolute;
+            cursor: pointer;
+            color: $gray;
+            font-size: 16px;
+            right: 10px;
+            top: 50%;
+            margin-top: -8px;
+        }
+    }
+}

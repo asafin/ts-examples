@@ -1,0 +1,30 @@
+.TreeComponent {
+    margin-bottom: 20px;
+    &__title {
+        font-size: $base-font-size;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        cursor: pointer;
+        .p {
+            margin-left: auto;
+        }
+    }
+    &__title__icon {
+        margin-right: 10px;
+    }
+    &__title__icon_folder {
+        color: $yellow;
+    }
+    &.hide {
+        .TreeComponent__content {
+            display: none;
+        }
+        .TreeComponent__title__icon_caret {
+            transform: rotate(-90deg)
+        }
+    }
+    &__content {
+        padding-left: 20px;
+    }
+}

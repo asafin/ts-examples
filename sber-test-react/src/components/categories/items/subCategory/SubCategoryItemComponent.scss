@@ -1,0 +1,26 @@
+.SubCategoryItemComponent {
+    margin-bottom: 10px;
+    &__title {
+        font-size: $base-font-size;
+        color: $gray;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        cursor: pointer;
+        
+    }
+    &__title__icon {
+        margin-right: 10px;
+    }
+    &.hide {
+        .SubCategoryItemComponent__content {
+            display: none;
+        }
+        .SubCategoryItemComponent__title__icon_caret {
+            transform: rotate(-90deg)
+        }
+    }
+    &__content {
+        padding-left: 25px;
+    }
+}

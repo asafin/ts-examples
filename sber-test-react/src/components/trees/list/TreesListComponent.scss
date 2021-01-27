@@ -1,0 +1,12 @@
+.TreesListComponent {
+    padding: 20px 0 0 20px;
+    &__header {
+        margin-bottom: 20px;
+    }
+    &__empty {
+        padding-top: 20px;
+    }
+}
+
+@import './../item/tree/TreeComponent.scss';
+@import './../item/treeItem/TreeItemComponent.scss';

@@ -1,0 +1,38 @@
+@import "./../../../node_modules/normalize.css/normalize.css";
+@import "./fonts.scss";
+@import "./variables.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+div {
+  box-sizing: border-box;
+}
+
+body {
+    background: $white;
+    font-family: $roboto;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container_desktop {
+  $width: $desktop;
+  width: $width;
+  min-width: $width;
+  max-width: $width;
+}
+
+.link {
+  color: $black;
+  cursor: pointer;
+  transition: all 0.2s;
+  &:hover {
+      color: $yellow;
+  }
+}

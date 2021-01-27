@@ -1,0 +1,28 @@
+.CategoryItemComponent {
+    margin-bottom: 10px;
+    &__title {
+        font-size: $base-font-size;
+        display: flex;
+        height: 30px;
+        align-items: center;
+        cursor: pointer;
+        
+    }
+    &__title__icon {
+        margin-right: 10px;
+    }
+    &__title__icon_folder {
+        color: $yellow;
+    }
+    &.hide {
+        .CategoryItemComponent__content {
+            display: none;
+        }
+        .CategoryItemComponent__title__icon_caret {
+            transform: rotate(-90deg)
+        }
+    }
+    &__content {
+        padding-left: 20px;
+    }
+}

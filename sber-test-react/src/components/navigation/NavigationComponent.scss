@@ -1,0 +1,34 @@
+.NavigationComponent {
+    $height: 50px;
+    height: $height;
+    background: $gray;
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+    &__column_right {
+        margin-left: auto;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        height: $height;
+        &__icon {
+            margin-right: 10px;
+            font-size: $fontSize30;
+        }
+        &__text {
+            text-transform: uppercase;
+            font-size: $fontSize30;
+        }
+    }
+    
+    .userMenu {
+        display: flex;
+        align-items: center;
+        font-size: $base-font-size;
+        &__icon {
+            margin-left: 20px;
+        }
+    }
+}
